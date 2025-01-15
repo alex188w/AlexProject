@@ -17,8 +17,8 @@
   <div class="top">
 
     <div class="top__header center">
-      <div class="top__footer-logo">
-        <img class="logo" width="80px" src="./img/logo2-1.jpg" alt="">
+      <div class="top__footer-logo">        
+        <a class="logo"  href="https://alex18w.ru/"><img width="80px" src="./img/logo2-1.jpg" alt=""></a>
         <!-- <img class="logo" width="80px" src="./img/LogoA.JPG" alt=""> -->
       </div>
       <div class="header-right">
@@ -43,7 +43,7 @@
     </div>
 
     <div class="top-about center">
-      <img class="alex-photo" src="./img/alex.jpg" alt="photo">
+      <img class="alex-photo" src="./img/AlexPhoto2.JPG" alt="photo">
       <div class="alex-name">
         <h3 class="alex-name_name">Алексей</h3>
         <h2 class="alex-name_surname">Шевченко</h2>
@@ -240,5 +240,34 @@
         <p class="send">сообщение</p>
       </div>
     </button>
+
+        <!-- <p style="color: red">{{$text}}</p>
+        <form action="{{route('message_store')}}" method="post">
+            @csrf
+            <div class="form_section">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form_section">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" required>
+            </div>                
+            <div class="form_section">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+            </div>   
+            <div class="form_section">
+                <label for="text_message">Text Message</label>
+                <textarea name="text_message" id="text_message" required></textarea>
+            </div>           
+            <button type="submit">Submit</button>
+        </form>
+        @if($errors->any())
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li style="color: red">{{$error}}</li>
+                @endforeach
+            </ul>
+        @endif -->
   </div>
 </body>
